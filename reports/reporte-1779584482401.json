@@ -1,0 +1,51 @@
+[
+  {
+    "url": "http://localhost:5173/",
+    "timestamp": "2026-05-24T01:01:22.398Z",
+    "totalViolaciones": 3,
+    "violaciones": [
+      {
+        "id": "color-contrast",
+        "impacto": "serious",
+        "descripcion": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "ayuda": "Elements must meet minimum color contrast ratio thresholds",
+        "urlAyuda": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+        "criteriosWCAG": [
+          "wcag2aa",
+          "wcag143"
+        ],
+        "elementosAfectados": 1,
+        "ejemploHTML": "<p style=\"color: rgb(187, 187, 187); background: rgb(255, 255, 255);\">Texto con contraste muy bajo que falla WCAG AA</p>",
+        "selectorCSS": "p:nth-child(7)"
+      },
+      {
+        "id": "image-alt",
+        "impacto": "critical",
+        "descripcion": "Ensure <img> elements have alternative text or a role of none or presentation",
+        "ayuda": "Images must have alternative text",
+        "urlAyuda": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+        "criteriosWCAG": [
+          "wcag2a",
+          "wcag111"
+        ],
+        "elementosAfectados": 1,
+        "ejemploHTML": "<img src=\"https://via.placeholder.com/150\">",
+        "selectorCSS": "img"
+      },
+      {
+        "id": "label",
+        "impacto": "critical",
+        "descripcion": "Ensure every form element has a label",
+        "ayuda": "Form elements must have labels",
+        "urlAyuda": "https://dequeuniversity.com/rules/axe/4.11/label?application=playwright",
+        "criteriosWCAG": [
+          "wcag2a",
+          "wcag412"
+        ],
+        "elementosAfectados": 2,
+        "ejemploHTML": "<input type=\"email\">",
+        "selectorCSS": "input[type=\"email\"]"
+      }
+    ]
+  }
+]
