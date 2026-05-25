@@ -113,4 +113,4 @@ Automated tools detect 30-40% of accessibility issues. AI-assisted analysis adds
 
 ## Author
 
-Adrian — www.linkedin.com/in/yamidcastao
+Yamid Castaño — www.linkedin.com/in/yamidcastao
